@@ -1,5 +1,0 @@
-
-
-function TokenComp(params) {
-
-}

@@ -2,7 +2,8 @@ import './App.css';
 import WebModal from 'web3modal';
 import { ethers } from "ethers";
 import { CoinbaseWalletSDK } from "@coinbase/wallet-sdk";
-
+import Web3Wallet from "./components/walletConnect";
+import { Web3Button } from "@web3modal/react";
 const providerOptions = {
 
   coinbasewallet: {
@@ -15,7 +16,6 @@ const providerOptions = {
 
 
   }
-
 
 }
 
@@ -46,6 +46,7 @@ function App() {
 
         <h1>Web3Modal Connection</h1>
         <button onClick={connectWallet}>Connect Wallet</button>
+
       </header>
     </div>
   );
